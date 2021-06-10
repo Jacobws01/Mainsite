@@ -1,0 +1,256 @@
+.ability {
+	overflow: hidden;
+    padding: 80px 0;
+    display: block;
+    background-color: #f9f9f9;
+}
+
+.container {
+	overflow: hidden;
+	width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    box-sizing: border-box;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 1408px) {
+		.container {
+    max-width: 1440px;
+}
+}
+
+@media (max-width: 1407px) {
+		.container {
+    max-width: 960px;
+}
+}
+
+@media (max-width: 970px) {
+        .container {
+    max-width: 540px;
+}
+}
+
+@media (max-width: 576px) {
+		.container {
+    max-width: 540px;
+}
+}
+
+.wrappedheader {
+	justify-content: center !important;
+    -webkit-box-pack: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.header {
+	position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+@media (min-width: 992px) {
+		.header {
+  		 flex: 0 0 50%;
+    	max-width: 50%;
+    	-webkit-box-flex: 0;
+}
+}
+
+.headerblock {
+	display: block;
+}
+
+.headerblock h3 {
+	position: relative;
+    margin-bottom: 60px;
+    color: #3f3f3f;
+    font-weight: 100;
+    font-size: calc(30px + 11 * ((100vw - 320px) / 1440));
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgb(63 63 63 / 30%);
+}
+
+.headerblock h3::before {
+	content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 100px;
+    height: 1px;
+    background: radial-gradient(closest-side, rgba(63, 63, 63, 0.5), rgba(63, 63, 63, 0));
+    transform: translate(-50%, 0);
+}
+
+.headerblock h3::after {
+	content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 150px;
+    height: 1px;
+    background: radial-gradient(closest-side, #fc6076, rgba(63, 63, 63, 0));
+    transform: translate(-50%, 0);
+}
+
+.headerblock h3 span {
+	color: #fc6076;
+    font-weight: 600;
+    text-shadow: 0 2px 6px rgb(252 96 118 / 30%);
+    font-size: calc(30px + 11 * ((100vw - 320px) / 1440));
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textcenter {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.portfolioblock {
+    position: relative;
+    padding: 0 5px;
+    display: block;
+}
+
+.itemholder {
+    margin-bottom: 30px;
+    position: relative;
+    display: block;
+    transform: translate3d(0, 0, 0);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.theitem {
+    width: 457px;
+    height: 621px
+    !important;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #f9f9f9;
+    float: left;
+    min-height: 1px;
+}
+
+.theitem a {
+    background-color: transparent;
+    border-bottom: 2px solid #fc6076;
+    color: #3f3f3f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    font-size: calc(17px + 1 * ((100vw - 320px) / 1440));
+    font-family: "Nunito", sans-serif;
+    line-height: 28px;
+}
+
+.Image {
+    position: relative;
+    height: 100%;
+    display: block;
+}
+
+.theitem:hover .desc .text {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 6px);
+}
+
+.theitem:hover .Image::before {
+    opacity: 1;
+}
+
+.theitem:hover .desc .title {
+    transform: translate(0, 10px);
+}
+
+.Image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 3s cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+}
+
+.desc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all 0.3s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.text {
+    font-size: calc(17px + 1 * ((100vw - 320px) / 1440));
+    font-family: "Nunito", sans-serif;
+    line-height: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #f1f1f1;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: translate(0, -16px);
+    -webkit-box-pack: center;
+}
+
+.title {
+    margin-bottom: 2%;
+    font-weight: 200;
+    font-size: calc(24px + 16 * ((100vw - 320px) / 1440));
+    line-height: 100%;
+    text-align: center;
+    text-shadow: 0 2px 6px rgb(0 0 0 / 50%);
+    transition: 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: translate(0, 0);  
+    font-family: "Nunito", sans-serif;
+        color: #fff;
+        display: block;
+}
+
+@media (max-width: 480px) {
+        .theitem {
+         width: 300px!important;
+}
+    .image {
+        width: 300px;
+    }
+
+}
