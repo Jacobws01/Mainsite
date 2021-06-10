@@ -27,10 +27,7 @@ function Abilities() {
                           </div>
                           <div className={styles.description}>
                             <div className={styles.itemdesctitle}>Fast</div>
-                            <div className={styles.itemdesctext}>Fast load times, Check out this website score on Google's PageSpeed Insights.</div>
-                            <div className={styles.hey}>
-                                 <a to='/' className={styles.mainbutton}>Speed test</a>
-                             </div>
+                            <div className={styles.itemdesctext}>Fast load times and lag free interactions.</div>
                           </div>
                         </div>
                       </div>
