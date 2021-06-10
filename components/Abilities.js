@@ -15,7 +15,6 @@ function Abilities() {
                     <div className={styles.header}>
                       <div className={styles.headerblock}>
                         <h3><span>About</span></h3>
-                        <p className={styles.textcenter}>fdasfdasfsafdasfasfdasfasf fdsafdsafsadf idsaf</p>
                       </div>
                     </div>
                 </div>
