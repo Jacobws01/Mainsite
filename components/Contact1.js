@@ -23,7 +23,7 @@ function Contact1() {
 					<textarea id="message" name="message" placeholder="Your Comment"></textarea>
 				</div>
 				
-					<button className={styles.button} type="submit"/>
+					<input className={styles.button} type="submit"/>
 				
 			</form>
 		</div>
