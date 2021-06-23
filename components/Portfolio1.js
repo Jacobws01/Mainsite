@@ -31,7 +31,7 @@ function Portfolio1() {
                   </a>
                 </div>
                 <div className={styles.theitem}>
-                  <a href="/">
+                  <a href="https://cards-front.vercel.app/" target="_blank">
                     <div className={styles.Image}>
                       <Image src='/product3.png' width={457} height={621.9}/>
                     </div>
