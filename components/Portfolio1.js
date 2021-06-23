@@ -20,7 +20,7 @@ function Portfolio1() {
             <div className={styles.portfolioblock}>
               <div className={styles.itemholder}>
                 <div className={styles.theitem}>
-                  <a href="/">
+                  <a href="https://cards-front.vercel.app/" target="_blank">
                     <div className={styles.Image}>
                       <Image src='/product2.png' width={457} height={621.9}/>
                     </div>
